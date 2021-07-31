@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Form</title>
+<link rel="icon" href="icon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="my style.css">
+</head>
+
+<body onload="load()">
+<h1 style="text-align: center;" >PERSONAL INFORMATION</h1>
+<div>
+<form id="re_set" action="">
+    <label for="my_name"><b>Name:</b></label>                                              
+     <input type="text"  name="data" id="my_name" > <input type="hidden" id="hid_Na"> <br> <br>
+
+     <label for="my_mobile"><b>Mobile:</b></label>
+     <input type="number"  name="file" id="my_mobile"> <input type="hidden" id="hid_Mo"> <br> <br>
+   
+   <label for="my_email"><b>Email:</b> </label>
+   <input type="email" name="form" id="my_email"> <input type="hidden" id="hid_Em"> <br> <br>
+
+   <label><b>DOB:</b>  </label><br>
+   <label>Day:</label>
+    <select  id="d_Day">
+        <option>--</option>
+       <option name="date">1</option>
+       <option name="date">2</option>
+       <option name="date">3</option>
+       <option name="date">4</option>
+       <option name="date">5</option>
+       <option name="date">6</option>
+       <option name="date">7</option>
+       <option name="date">8</option>
+       <option name="date">9</option>
+       <option name="date">10</option>
+       <option name="date">11</option>
+       <option name="date">12</option>
+       <option name="date">13</option>
+       <option name="date">14</option>
+       <option name="date">15</option>
+       <option name="date">16</option>
+       <option name="date">17</option>
+       <option name="date">18</option>
+       <option name="date">19</option>
+       <option name="date">20</option>
+       <option name="date">21</option>
+       <option name="date">22</option>
+       <option name="date">23</option>
+       <option name="date">24</option>
+       <option name="date">25</option>
+       <option name="date">26</option>
+       <option name="date">27</option>
+       <option name="date">28</option>
+       <option name="date">29</option>
+       <option name="date">30</option>
+       <option name="date">31</option>
+   </select>
+    <label>Month:</label>   
+    <select id= "m_Month">
+        <option>----</option>
+       <option name="month">January</option>
+       <option name="month">February</option>
+       <option name="month">March</option>
+       <option name="month">April</option>
+       <option name="month">May</option>
+       <option name="month">June</option>
+       <option name="month">July</option>
+       <option name="month">August</option>
+       <option name="month">September</option>
+       <option name="month">October</option>
+       <option name="month">November</option>
+       <option name="month">December</option>
+    </select>
+    <label>Year:</label>
+    <select id="y_Year">
+        <option>----</option>
+       <option name="year">2001</option>
+       <option name="year">2002</option>
+       <option name="year">2003</option>
+       <option name="year">2004</option>
+       <option name="year">2005</option>
+       <option name="year">2006</option>
+       <option name="year">2007</option>
+       <option name="year">2008</option>
+       <option name="year">2009</option>
+       <option name="year">2010</option>
+       <option name="year">2011</option>
+       <option name="year">2012</option>
+       <option name="year">2013</option>
+       <option name="year">2014</option>
+       <option name="year">2015</option>
+       <option name="year">2016</option>
+       <option name="year">2017</option>
+       <option name="year">2018</option>
+       <option name="year">2019</option>
+       <option name="year">2020</option>
+       <option name="year">2021</option>
+       <option name="year">2022</option>
+       <option name="year">2023</option>
+       <option name="year">2024</option>
+       <option name="year">2025</option>
+       <option name="year">2026</option>
+       <option name="year">2027</option>
+       <option name="year">2028</option>
+       <option name="year">2029</option>
+       <option name="year">2030</option>
+       <option name="year">2031</option>
+       <option name="year">2032</option>
+       <option name="year">2033</option>
+       <option name="year">2034</option>
+       <option name="year">2035</option>
+       <option name="year">2036</option>
+       <option name="year">2037</option>
+       <option name="year">2038</option>
+       <option name="year">2039</option>
+       <option name="year">2040</option>
+    </select>
+    <br> <br>
+    
+</form>
+
+ <button style="background-color:rgb(40, 204, 216);" id="add" type="submit" onclick="sConsole()"><b>Add</b></button>
+ <button style="background-color:rgb(40, 204, 216);" id="save" type="button" onclick="show()"><b>Save</b></button>
+ <button style="background-color:rgb(40, 204, 216);" type="reset" onclick="rConsole()"><b>Reset</b></button>
+</div>
+
+<h1 style="text-align: center;">INFORMATION TABLE</h1>
+<table  id="Cle_ar" style= "width:100%;" border="4px" >
+<thead>
+    <tr id="1">
+        <th>Id No.</th>
+        <th>NAME</th>
+        <th>MOBILE</th>
+        <th>EMAIL</th>
+        <th>DOB</th>
+        <th>ACTION</th>
+    </tr>
+</thead>
+<tbody>
+    <tr id="2">
+      
+    </tr>
+</tbody>
+
+</table>
+
+</body>
+<script  type="text/javascript" src="Script.js">  </script>
+
+</html>

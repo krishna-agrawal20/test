@@ -1,0 +1,29 @@
+table{
+    border-collapse: collapse;
+}
+table tr td{
+    text-align: center;
+    padding: 10px ;
+}
+body{
+    counter-reset: Count-Value;
+    background-color:lightgoldenrodyellow;
+background: rgba(0, 128, 0, 0.3);
+background-image: url("back_img.jpeg.jpg") ;
+}
+tr td:first-child::before {
+counter-increment: Count-Value;
+content: "" counter(Count-Value);    
+}
+div {
+max-width: 500px;
+margin: 40px auto;
+background-color: white;
+padding: 3%;
+border-color: rgb(22, 9, 9);
+border-style: solid;
+font-style: italic;
+}
+h1{
+    font-family: "Audiowide",sans-serif;
+}
